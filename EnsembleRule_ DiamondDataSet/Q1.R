@@ -4,7 +4,7 @@ source("/Users/deeksha/Library/R/3.1/R_Rulefit/rulefit.r")
 install.packages("akima", lib=rfhome)
 
 library(gdata)
-data = read.xls("/Users/deeksha/Box Sync/coen281/HomeWork Assignment/HW4/Diamond_data/Diamond_Data.xls")
+data = read.xls("Diamond_data/Diamond_Data.xls")
 head(data)
 plot(data$Cut, data$Price, xlab = "Cut", ylab = "Price")
 hist(data$Price, col="red", xlab="Price", ylab="Distribution", labels = TRUE)
