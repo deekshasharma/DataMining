@@ -1,7 +1,7 @@
 detach(package:tm, unload=TRUE)
 library(arules)
 #(a)
-baskets = read.transactions("/Users/deeksha/Box Sync/COEN281/HomeWork Assignment/HW4/R/ratingsAsBasket.txt", 
+baskets = read.transactions("R/ratingsAsBasket.txt", 
                             format = "basket", sep = NULL)
 summary(baskets)
 
